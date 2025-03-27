@@ -2,6 +2,7 @@ export interface Produto {
   id: number;
   nome: string;
   descricao: string;
-  categoriaID: number;
+  categoria: string
+  //categoriaID: number;
   preco: number;
 }
