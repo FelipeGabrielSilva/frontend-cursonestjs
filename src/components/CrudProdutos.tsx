@@ -70,12 +70,12 @@ const CrudProdutos = () => {
         columns={[
           { title: "Nome", dataIndex: "nome" },
           { title: "Descrição", dataIndex: "descricao" },
-          {
+          /* {
             title: "Categoria",
             dataIndex: "categoria",
             render: (categoria) => categoria.nome,
-          },
-          /* { title: "Categoria", dataIndex: "categoria" }, */
+          }, */
+          { title: "Categoria", dataIndex: "categoria" },
           { title: "Preço", dataIndex: "preco" },
           {
             title: "Ações",
@@ -118,11 +118,11 @@ const CrudProdutos = () => {
             <InputNumber style={{ width: "100%" }} />
           </Form.Item>
 
-          {/* <Form.Item name="categoria" label="Categoria">
+          <Form.Item name="categoria" label="Categoria">
             <Input />
-          </Form.Item> */}
+          </Form.Item>
 
-          <Form.Item name="categoriaID" label="Categoria">
+          {/* <Form.Item name="categoriaID" label="Categoria">
             <Select style={{ width: "100%" }}>
               {categorias.map((categoria) => (
                 <Select.Option key={categoria.id} value={categoria.id}>
@@ -130,7 +130,7 @@ const CrudProdutos = () => {
                 </Select.Option>
               ))}
             </Select>
-          </Form.Item>
+          </Form.Item> */}
         </Form>
       </Modal>
     </div>
